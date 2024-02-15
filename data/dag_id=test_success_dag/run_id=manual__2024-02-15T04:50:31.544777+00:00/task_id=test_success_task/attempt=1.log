@@ -1,0 +1,27 @@
+[2024-02-15T04:51:19.336+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_success_dag.test_success_task manual__2024-02-15T04:50:31.544777+00:00 [queued]>
+[2024-02-15T04:51:19.368+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_success_dag.test_success_task manual__2024-02-15T04:50:31.544777+00:00 [queued]>
+[2024-02-15T04:51:19.370+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-02-15T04:51:19.440+0000] {taskinstance.py:2191} INFO - Executing <Task(KubernetesPodOperator): test_success_task> on 2024-02-15 04:50:31.544777+00:00
+[2024-02-15T04:51:19.465+0000] {standard_task_runner.py:60} INFO - Started process 43 to run task
+[2024-02-15T04:51:19.498+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'test_success_dag', 'test_success_task', 'manual__2024-02-15T04:50:31.544777+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test_success_dag.py', '--cfg-path', '/tmp/tmphqre38wi']
+[2024-02-15T04:51:19.512+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask test_success_task
+[2024-02-15T04:51:19.803+0000] {task_command.py:423} INFO - Running <TaskInstance: test_success_dag.test_success_task manual__2024-02-15T04:50:31.544777+00:00 [running]> on host test-success-dag-test-success-task-mxelnq0e
+[2024-02-15T04:51:20.095+0000] {pod_generator.py:547} WARNING - Model file  does not exist
+[2024-02-15T04:51:20.273+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='test_success_dag' AIRFLOW_CTX_TASK_ID='test_success_task' AIRFLOW_CTX_EXECUTION_DATE='2024-02-15T04:50:31.544777+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-15T04:50:31.544777+00:00'
+[2024-02-15T04:51:20.299+0000] {pod.py:926} INFO - Building pod test-success-task-9wo45wjl with labels: {'dag_id': 'test_success_dag', 'task_id': 'test_success_task', 'run_id': 'manual__2024-02-15T045031.5447770000-a05865d9f', 'kubernetes_pod_operator': 'True', 'try_number': '1'}
+[2024-02-15T04:51:20.325+0000] {base.py:83} INFO - Using connection ID 'kubernetes_default' for task execution.
+[2024-02-15T04:51:20.799+0000] {pod.py:490} INFO - Found matching pod test-success-task-9wo45wjl with labels {'airflow_kpo_in_cluster': 'True', 'airflow_version': '2.8.1', 'dag_id': 'test_success_dag', 'kubernetes_pod_operator': 'True', 'run_id': 'manual__2024-02-15T045031.5447770000-a05865d9f', 'task_id': 'test_success_task', 'try_number': '1'}
+[2024-02-15T04:51:20.803+0000] {pod.py:491} INFO - `try_number` of task_instance: 1
+[2024-02-15T04:51:20.805+0000] {pod.py:492} INFO - `try_number` of pod: 1
+[2024-02-15T04:51:20.881+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-success-task-9wo45wjl
+[2024-02-15T04:51:21.970+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-success-task-9wo45wjl
+[2024-02-15T04:51:23.030+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-success-task-9wo45wjl
+[2024-02-15T04:51:24.122+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-success-task-9wo45wjl
+[2024-02-15T04:51:25.313+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-success-task-9wo45wjl
+[2024-02-15T04:51:26.365+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-success-task-9wo45wjl
+[2024-02-15T04:51:27.574+0000] {pod_manager.py:460} INFO - [base] Hello World!
+
+[2024-02-15T04:51:27.787+0000] {pod.py:785} INFO - Deleting pod: test-success-task-9wo45wjl
+[2024-02-15T04:51:27.876+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=test_success_dag, task_id=test_success_task, execution_date=20240215T045031, start_date=20240215T045119, end_date=20240215T045127
+[2024-02-15T04:51:27.991+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-15T04:51:28.067+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
