@@ -3145,3 +3145,10 @@ ImportError: Could not import `airflow.providers.cncf.kubernetes.backcompat.pod.
 [2024-02-15T23:31:04.815+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:04.814+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2024-02-15T23:31:04.877+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:04.876+0000] {dag.py:3823} INFO - Setting next_dagrun for test_success_dag to 2020-01-01 00:00:00+00:00, run_after=2020-01-01 00:00:00+00:00
 [2024-02-15T23:31:04.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_success_dag.py took 0.221 seconds
+[2024-02-15T23:31:35.495+0000] {processor.py:161} INFO - Started process (PID=600) to work on /opt/airflow/dags/test_success_dag.py
+[2024-02-15T23:31:35.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_success_dag.py for tasks to queue
+[2024-02-15T23:31:35.500+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:35.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/test_success_dag.py
+[2024-02-15T23:31:35.535+0000] {processor.py:840} INFO - DAG(s) 'test_success_dag' retrieved from /opt/airflow/dags/test_success_dag.py
+[2024-02-15T23:31:35.589+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:35.588+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-15T23:31:35.653+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:35.652+0000] {dag.py:3823} INFO - Setting next_dagrun for test_success_dag to 2020-01-01 00:00:00+00:00, run_after=2020-01-01 00:00:00+00:00
+[2024-02-15T23:31:35.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_success_dag.py took 0.227 seconds

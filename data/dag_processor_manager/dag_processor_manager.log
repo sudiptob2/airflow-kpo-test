@@ -5337,3 +5337,15 @@ File Path                                              PID    Runtime      # DAG
 /opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-15T23:30:33
 /opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.29s           2024-02-15T23:30:33
 ================================================================================
+[2024-02-15T23:31:28.562+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.34s           2024-02-15T23:31:03
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-15T23:31:04
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-15T23:31:03
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-15T23:31:03
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-15T23:31:03
+================================================================================

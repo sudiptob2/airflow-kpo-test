@@ -271,3 +271,10 @@
 [2024-02-15T23:31:03.250+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:03.249+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2024-02-15T23:31:03.329+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:03.328+0000] {dag.py:3823} INFO - Setting next_dagrun for minimal_test_fail_task_without_cr to None, run_after=None
 [2024-02-15T23:31:03.395+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minimal_test_fail_dag_without_cr.py took 0.281 seconds
+[2024-02-15T23:31:33.792+0000] {processor.py:161} INFO - Started process (PID=568) to work on /opt/airflow/dags/minimal_test_fail_dag_without_cr.py
+[2024-02-15T23:31:33.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minimal_test_fail_dag_without_cr.py for tasks to queue
+[2024-02-15T23:31:33.797+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:33.796+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/minimal_test_fail_dag_without_cr.py
+[2024-02-15T23:31:33.836+0000] {processor.py:840} INFO - DAG(s) 'minimal_test_fail_task_without_cr' retrieved from /opt/airflow/dags/minimal_test_fail_dag_without_cr.py
+[2024-02-15T23:31:33.915+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:33.915+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-02-15T23:31:34.006+0000] {logging_mixin.py:188} INFO - [2024-02-15T23:31:34.005+0000] {dag.py:3823} INFO - Setting next_dagrun for minimal_test_fail_task_without_cr to None, run_after=None
+[2024-02-15T23:31:34.062+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minimal_test_fail_dag_without_cr.py took 0.279 seconds
