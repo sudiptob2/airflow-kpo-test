@@ -12,7 +12,7 @@ default_args = {
     'image_pull_policy': 'Always'
 }
 
-dag = DAG('test_fail_dag',
+dag = DAG('test_fail_dag_2',
           default_args=default_args,
           description='A simple dag that uses the KubernetesPodOperator and fails on runtime',
           schedule_interval='@once',
@@ -20,20 +20,17 @@ dag = DAG('test_fail_dag',
 
 resource_reqs = {
     'requests': {
-        'memory': '50Mi',
+        'memory': '100Mi',
     },
     'limits': {
-        'memory': '100Mi',
+        'memory': '200Mi',
     },
 }
 
 simple_task = KubernetesPodOperator(
-    namespace='default',
-    task_id='test_fail_task',
-    name='test_fail_task',
-    cmds=['stress'],
-    arguments=['--vm', '1', '--vm-bytes', '250M', '--vm-hang', '1', '--verbose'],
-    image='polinux/stress',
+    task_id='test_fail_task_2',
+    name='test_fail_task_2',
+    image='bad_image_sudiptob2:latest',
     container_resources=resource_reqs,
     log_events_on_failure=True,
     dag=dag

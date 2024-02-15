@@ -1,0 +1,759 @@
+[2024-02-15T06:13:45.403+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_fail_dag.test_fail_task manual__2024-02-15T06:12:53.668345+00:00 [queued]>
+[2024-02-15T06:13:45.459+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_fail_dag.test_fail_task manual__2024-02-15T06:12:53.668345+00:00 [queued]>
+[2024-02-15T06:13:45.463+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-02-15T06:13:45.523+0000] {taskinstance.py:2191} INFO - Executing <Task(KubernetesPodOperator): test_fail_task> on 2024-02-15 06:12:53.668345+00:00
+[2024-02-15T06:13:45.533+0000] {standard_task_runner.py:60} INFO - Started process 43 to run task
+[2024-02-15T06:13:45.548+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'test_fail_dag', 'test_fail_task', 'manual__2024-02-15T06:12:53.668345+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test_fail_dag.py', '--cfg-path', '/tmp/tmp4rk4y5do']
+[2024-02-15T06:13:45.563+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask test_fail_task
+[2024-02-15T06:13:45.739+0000] {task_command.py:423} INFO - Running <TaskInstance: test_fail_dag.test_fail_task manual__2024-02-15T06:12:53.668345+00:00 [running]> on host test-fail-dag-test-fail-task-jrsv2djy
+[2024-02-15T06:13:45.975+0000] {pod_generator.py:547} WARNING - Model file  does not exist
+[2024-02-15T06:13:46.145+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='test_fail_dag' AIRFLOW_CTX_TASK_ID='test_fail_task' AIRFLOW_CTX_EXECUTION_DATE='2024-02-15T06:12:53.668345+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-15T06:12:53.668345+00:00'
+[2024-02-15T06:13:46.167+0000] {pod.py:926} INFO - Building pod test-fail-task-5k2ht89g with labels: {'dag_id': 'test_fail_dag', 'task_id': 'test_fail_task', 'run_id': 'manual__2024-02-15T061253.6683450000-c56cfeefa', 'kubernetes_pod_operator': 'True', 'try_number': '1'}
+[2024-02-15T06:13:46.186+0000] {base.py:83} INFO - Using connection ID 'kubernetes_default' for task execution.
+[2024-02-15T06:13:46.716+0000] {pod.py:490} INFO - Found matching pod test-fail-task-5k2ht89g with labels {'airflow_kpo_in_cluster': 'True', 'airflow_version': '2.8.1', 'dag_id': 'test_fail_dag', 'kubernetes_pod_operator': 'True', 'run_id': 'manual__2024-02-15T061253.6683450000-c56cfeefa', 'task_id': 'test_fail_task', 'try_number': '1'}
+[2024-02-15T06:13:46.723+0000] {pod.py:491} INFO - `try_number` of task_instance: 1
+[2024-02-15T06:13:46.727+0000] {pod.py:492} INFO - `try_number` of pod: 1
+[2024-02-15T06:13:46.767+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:47.843+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:48.886+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:50.079+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:51.155+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:52.208+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:53.248+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:54.319+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:55.372+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:56.438+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:57.472+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:58.557+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:13:59.645+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:00.744+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:01.817+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:03.024+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:04.082+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:05.114+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:06.148+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:07.188+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:08.243+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:09.268+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:10.387+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:11.442+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:12.477+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:13.510+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:14.569+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:15.596+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:16.660+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:17.730+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:18.769+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:19.835+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:20.905+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:22.126+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:23.286+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:24.335+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:25.402+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:26.456+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:27.509+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:28.629+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:29.679+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:30.752+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:31.799+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:32.857+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:33.968+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:35.024+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:36.061+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:37.107+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:38.209+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:39.250+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:40.466+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:41.584+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:42.637+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:43.684+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:44.734+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:45.797+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:46.856+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:47.951+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:49.007+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:50.105+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:51.184+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:52.259+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:53.299+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:54.365+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:55.404+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:56.459+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:57.531+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:58.573+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:14:59.609+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:00.719+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:01.786+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:02.870+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:03.960+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:05.002+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:06.050+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:07.088+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:08.192+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:09.248+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:10.379+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:11.460+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:12.517+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:13.575+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:14.613+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:15.658+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:16.707+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:17.760+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:18.798+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:19.835+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:20.904+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:21.975+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:23.001+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:24.065+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:25.095+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:26.138+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:27.186+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:28.244+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:29.489+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:30.595+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:31.647+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:32.701+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:33.833+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:34.892+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:35.984+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:37.031+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:38.062+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:39.099+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:40.164+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:41.225+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:42.300+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:43.354+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:44.426+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:45.455+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:46.515+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:47.558+0000] {pod_manager.py:359} WARNING - Pod not yet started: test-fail-task-5k2ht89g
+[2024-02-15T06:15:53.808+0000] {pod.py:980} ERROR - (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '1bc30298-17f1-4435-929f-25a361f591b4', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': '257f2cd3-dba7-4f47-baa6-49dced15d50c', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'aa697f9a-2e34-4d59-a9f7-5a3e00d0d86e', 'Date': 'Thu, 15 Feb 2024 06:15:53 GMT', 'Content-Length': '288'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \"system:serviceaccount:default:default\" cannot list resource \"events\" in API group \"\" in the namespace \"default\"","reason":"Forbidden","details":{"kind":"events"},"code":403}
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 508, in await_pod_start
+    self.pod_manager.await_pod_start(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/utils/pod_manager.py", line 365, in await_pod_start
+    raise PodLaunchFailedException(msg)
+airflow.providers.cncf.kubernetes.utils.pod_manager.PodLaunchFailedException: Pod took longer than 120 seconds to start. Check the pod events in kubernetes to determine why.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 551, in execute_sync
+    self.await_pod_start(pod=self.pod)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 515, in await_pod_start
+    for event in self.pod_manager.read_pod_events(pod).items:
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/utils/pod_manager.py", line 680, in read_pod_events
+    return self._client.list_namespaced_event(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api/core_v1_api.py", line 15205, in list_namespaced_event
+    return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api/core_v1_api.py", line 15320, in list_namespaced_event_with_http_info
+    return self.api_client.call_api(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 348, in call_api
+    return self.__call_api(resource_path, method,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 180, in __call_api
+    response_data = self.request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 373, in request
+    return self.rest_client.GET(url,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/rest.py", line 240, in GET
+    return self.request("GET", url,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/rest.py", line 234, in request
+    raise ApiException(http_resp=r)
+kubernetes.client.exceptions.ApiException: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'ef5eda2e-9b3a-422a-bbd3-3e2748fce714', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': '257f2cd3-dba7-4f47-baa6-49dced15d50c', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'aa697f9a-2e34-4d59-a9f7-5a3e00d0d86e', 'Date': 'Thu, 15 Feb 2024 06:15:50 GMT', 'Content-Length': '288'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \"system:serviceaccount:default:default\" cannot list resource \"events\" in API group \"\" in the namespace \"default\"","reason":"Forbidden","details":{"kind":"events"},"code":403}
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 731, in _read_pod_events
+    for event in self.pod_manager.read_pod_events(pod).items:
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/utils/pod_manager.py", line 680, in read_pod_events
+    return self._client.list_namespaced_event(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api/core_v1_api.py", line 15205, in list_namespaced_event
+    return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api/core_v1_api.py", line 15320, in list_namespaced_event_with_http_info
+    return self.api_client.call_api(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 348, in call_api
+    return self.__call_api(resource_path, method,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 180, in __call_api
+    response_data = self.request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 373, in request
+    return self.rest_client.GET(url,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/rest.py", line 240, in GET
+    return self.request("GET", url,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/rest.py", line 234, in request
+    raise ApiException(http_resp=r)
+kubernetes.client.exceptions.ApiException: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '1bc30298-17f1-4435-929f-25a361f591b4', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': '257f2cd3-dba7-4f47-baa6-49dced15d50c', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'aa697f9a-2e34-4d59-a9f7-5a3e00d0d86e', 'Date': 'Thu, 15 Feb 2024 06:15:53 GMT', 'Content-Length': '288'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \"system:serviceaccount:default:default\" cannot list resource \"events\" in API group \"\" in the namespace \"default\"","reason":"Forbidden","details":{"kind":"events"},"code":403}
+
+
+[2024-02-15T06:15:53.891+0000] {pod.py:785} INFO - Deleting pod: test-fail-task-5k2ht89g
+[2024-02-15T06:15:54.122+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 508, in await_pod_start
+    self.pod_manager.await_pod_start(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/utils/pod_manager.py", line 365, in await_pod_start
+    raise PodLaunchFailedException(msg)
+airflow.providers.cncf.kubernetes.utils.pod_manager.PodLaunchFailedException: Pod took longer than 120 seconds to start. Check the pod events in kubernetes to determine why.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 551, in execute_sync
+    self.await_pod_start(pod=self.pod)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 515, in await_pod_start
+    for event in self.pod_manager.read_pod_events(pod).items:
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/utils/pod_manager.py", line 680, in read_pod_events
+    return self._client.list_namespaced_event(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api/core_v1_api.py", line 15205, in list_namespaced_event
+    return self.list_namespaced_event_with_http_info(namespace, **kwargs)  # noqa: E501
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api/core_v1_api.py", line 15320, in list_namespaced_event_with_http_info
+    return self.api_client.call_api(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 348, in call_api
+    return self.__call_api(resource_path, method,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 180, in __call_api
+    response_data = self.request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/api_client.py", line 373, in request
+    return self.rest_client.GET(url,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/rest.py", line 240, in GET
+    return self.request("GET", url,
+  File "/home/airflow/.local/lib/python3.8/site-packages/kubernetes/client/rest.py", line 234, in request
+    raise ApiException(http_resp=r)
+kubernetes.client.exceptions.ApiException: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'ef5eda2e-9b3a-422a-bbd3-3e2748fce714', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': '257f2cd3-dba7-4f47-baa6-49dced15d50c', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'aa697f9a-2e34-4d59-a9f7-5a3e00d0d86e', 'Date': 'Thu, 15 Feb 2024 06:15:50 GMT', 'Content-Length': '288'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"events is forbidden: User \"system:serviceaccount:default:default\" cannot list resource \"events\" in API group \"\" in the namespace \"default\"","reason":"Forbidden","details":{"kind":"events"},"code":403}
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 534, in execute
+    return self.execute_sync(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 574, in execute_sync
+    self.cleanup(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 715, in cleanup
+    raise AirflowException(
+airflow.exceptions.AirflowException: Pod test-fail-task-5k2ht89g returned a failure.
+remote_pod: {'api_version': None,
+ 'kind': None,
+ 'metadata': {'annotations': None,
+              'cluster_name': None,
+              'creation_timestamp': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal()),
+              'deletion_grace_period_seconds': None,
+              'deletion_timestamp': None,
+              'finalizers': None,
+              'generate_name': None,
+              'generation': None,
+              'labels': {'airflow_kpo_in_cluster': 'True',
+                         'airflow_version': '2.8.1',
+                         'dag_id': 'test_fail_dag',
+                         'kubernetes_pod_operator': 'True',
+                         'run_id': 'manual__2024-02-15T061253.6683450000-c56cfeefa',
+                         'task_id': 'test_fail_task',
+                         'try_number': '1'},
+              'managed_fields': [{'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:metadata': {'f:labels': {'.': {},
+                                                                            'f:airflow_kpo_in_cluster': {},
+                                                                            'f:airflow_version': {},
+                                                                            'f:dag_id': {},
+                                                                            'f:kubernetes_pod_operator': {},
+                                                                            'f:run_id': {},
+                                                                            'f:task_id': {},
+                                                                            'f:try_number': {}}},
+                                                'f:spec': {'f:affinity': {},
+                                                           'f:containers': {'k:{"name":"base"}': {'.': {},
+                                                                                                  'f:command': {},
+                                                                                                  'f:image': {},
+                                                                                                  'f:imagePullPolicy': {},
+                                                                                                  'f:name': {},
+                                                                                                  'f:resources': {'.': {},
+                                                                                                                  'f:requests': {'.': {},
+                                                                                                                                 'f:cpu': {},
+                                                                                                                                 'f:memory': {}}},
+                                                                                                  'f:terminationMessagePath': {},
+                                                                                                  'f:terminationMessagePolicy': {}}},
+                                                           'f:dnsPolicy': {},
+                                                           'f:enableServiceLinks': {},
+                                                           'f:restartPolicy': {},
+                                                           'f:schedulerName': {},
+                                                           'f:securityContext': {},
+                                                           'f:terminationGracePeriodSeconds': {}}},
+                                  'manager': 'OpenAPI-Generator',
+                                  'operation': 'Update',
+                                  'subresource': None,
+                                  'time': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal())},
+                                 {'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:status': {'f:conditions': {'.': {},
+                                                                              'k:{"type":"PodScheduled"}': {'.': {},
+                                                                                                            'f:lastProbeTime': {},
+                                                                                                            'f:lastTransitionTime': {},
+                                                                                                            'f:message': {},
+                                                                                                            'f:reason': {},
+                                                                                                            'f:status': {},
+                                                                                                            'f:type': {}}}}},
+                                  'manager': 'kube-scheduler',
+                                  'operation': 'Update',
+                                  'subresource': 'status',
+                                  'time': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal())}],
+              'name': 'test-fail-task-5k2ht89g',
+              'namespace': 'default',
+              'owner_references': None,
+              'resource_version': '11956',
+              'self_link': None,
+              'uid': '2eee2269-3d87-4594-9a0b-54abf8308b09'},
+ 'spec': {'active_deadline_seconds': None,
+          'affinity': {'node_affinity': None,
+                       'pod_affinity': None,
+                       'pod_anti_affinity': None},
+          'automount_service_account_token': None,
+          'containers': [{'args': None,
+                          'command': ['python',
+                                      '-c',
+                                      'raise Exception("This is a runtime '
+                                      'failure")'],
+                          'env': None,
+                          'env_from': None,
+                          'image': 'python:3.8-slim-buster',
+                          'image_pull_policy': 'Always',
+                          'lifecycle': None,
+                          'liveness_probe': None,
+                          'name': 'base',
+                          'ports': None,
+                          'readiness_probe': None,
+                          'resources': {'limits': None,
+                                        'requests': {'cpu': '100m',
+                                                     'memory': '100Gi'}},
+                          'security_context': None,
+                          'startup_probe': None,
+                          'stdin': None,
+                          'stdin_once': None,
+                          'termination_message_path': '/dev/termination-log',
+                          'termination_message_policy': 'File',
+                          'tty': None,
+                          'volume_devices': None,
+                          'volume_mounts': [{'mount_path': '/var/run/secrets/kubernetes.io/serviceaccount',
+                                             'mount_propagation': None,
+                                             'name': 'kube-api-access-bhkjp',
+                                             'read_only': True,
+                                             'sub_path': None,
+                                             'sub_path_expr': None}],
+                          'working_dir': None}],
+          'dns_config': None,
+          'dns_policy': 'ClusterFirst',
+          'enable_service_links': True,
+          'ephemeral_containers': None,
+          'host_aliases': None,
+          'host_ipc': None,
+          'host_network': None,
+          'host_pid': None,
+          'hostname': None,
+          'image_pull_secrets': None,
+          'init_containers': None,
+          'node_name': None,
+          'node_selector': None,
+          'os': None,
+          'overhead': None,
+          'preemption_policy': 'PreemptLowerPriority',
+          'priority': 0,
+          'priority_class_name': None,
+          'readiness_gates': None,
+          'restart_policy': 'Never',
+          'runtime_class_name': None,
+          'scheduler_name': 'default-scheduler',
+          'security_context': {'fs_group': None,
+                               'fs_group_change_policy': None,
+                               'run_as_group': None,
+                               'run_as_non_root': None,
+                               'run_as_user': None,
+                               'se_linux_options': None,
+                               'seccomp_profile': None,
+                               'supplemental_groups': None,
+                               'sysctls': None,
+                               'windows_options': None},
+          'service_account': 'default',
+          'service_account_name': 'default',
+          'set_hostname_as_fqdn': None,
+          'share_process_namespace': None,
+          'subdomain': None,
+          'termination_grace_period_seconds': 30,
+          'tolerations': [{'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/not-ready',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None},
+                          {'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/unreachable',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None}],
+          'topology_spread_constraints': None,
+          'volumes': [{'aws_elastic_block_store': None,
+                       'azure_disk': None,
+                       'azure_file': None,
+                       'cephfs': None,
+                       'cinder': None,
+                       'config_map': None,
+                       'csi': None,
+                       'downward_api': None,
+                       'empty_dir': None,
+                       'ephemeral': None,
+                       'fc': None,
+                       'flex_volume': None,
+                       'flocker': None,
+                       'gce_persistent_disk': None,
+                       'git_repo': None,
+                       'glusterfs': None,
+                       'host_path': None,
+                       'iscsi': None,
+                       'name': 'kube-api-access-bhkjp',
+                       'nfs': None,
+                       'persistent_volume_claim': None,
+                       'photon_persistent_disk': None,
+                       'portworx_volume': None,
+                       'projected': {'default_mode': 420,
+                                     'sources': [{'config_map': None,
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': {'audience': None,
+                                                                            'expiration_seconds': 3607,
+                                                                            'path': 'token'}},
+                                                 {'config_map': {'items': [{'key': 'ca.crt',
+                                                                            'mode': None,
+                                                                            'path': 'ca.crt'}],
+                                                                 'name': 'kube-root-ca.crt',
+                                                                 'optional': None},
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': None},
+                                                 {'config_map': None,
+                                                  'downward_api': {'items': [{'field_ref': {'api_version': 'v1',
+                                                                                            'field_path': 'metadata.namespace'},
+                                                                              'mode': None,
+                                                                              'path': 'namespace',
+                                                                              'resource_field_ref': None}]},
+                                                  'secret': None,
+                                                  'service_account_token': None}]},
+                       'quobyte': None,
+                       'rbd': None,
+                       'scale_io': None,
+                       'secret': None,
+                       'storageos': None,
+                       'vsphere_volume': None}]},
+ 'status': {'conditions': [{'last_probe_time': None,
+                            'last_transition_time': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal()),
+                            'message': '0/2 nodes are available: 1 '
+                                       'Insufficient memory, 1 node(s) had '
+                                       'untolerated taint '
+                                       '{node-role.kubernetes.io/control-plane: '
+                                       '}. preemption: 0/2 nodes are '
+                                       'available: 1 No preemption victims '
+                                       'found for incoming pod, 1 Preemption '
+                                       'is not helpful for scheduling.',
+                            'reason': 'Unschedulable',
+                            'status': 'False',
+                            'type': 'PodScheduled'}],
+            'container_statuses': None,
+            'ephemeral_container_statuses': None,
+            'host_ip': None,
+            'init_container_statuses': None,
+            'message': None,
+            'nominated_node_name': None,
+            'phase': 'Pending',
+            'pod_i_ps': None,
+            'pod_ip': None,
+            'qos_class': 'Burstable',
+            'reason': None,
+            'start_time': None}}
+[2024-02-15T06:15:54.138+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=test_fail_dag, task_id=test_fail_task, execution_date=20240215T061253, start_date=20240215T061345, end_date=20240215T061554
+[2024-02-15T06:15:54.223+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 2 for task test_fail_task (Pod test-fail-task-5k2ht89g returned a failure.
+remote_pod: {'api_version': None,
+ 'kind': None,
+ 'metadata': {'annotations': None,
+              'cluster_name': None,
+              'creation_timestamp': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal()),
+              'deletion_grace_period_seconds': None,
+              'deletion_timestamp': None,
+              'finalizers': None,
+              'generate_name': None,
+              'generation': None,
+              'labels': {'airflow_kpo_in_cluster': 'True',
+                         'airflow_version': '2.8.1',
+                         'dag_id': 'test_fail_dag',
+                         'kubernetes_pod_operator': 'True',
+                         'run_id': 'manual__2024-02-15T061253.6683450000-c56cfeefa',
+                         'task_id': 'test_fail_task',
+                         'try_number': '1'},
+              'managed_fields': [{'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:metadata': {'f:labels': {'.': {},
+                                                                            'f:airflow_kpo_in_cluster': {},
+                                                                            'f:airflow_version': {},
+                                                                            'f:dag_id': {},
+                                                                            'f:kubernetes_pod_operator': {},
+                                                                            'f:run_id': {},
+                                                                            'f:task_id': {},
+                                                                            'f:try_number': {}}},
+                                                'f:spec': {'f:affinity': {},
+                                                           'f:containers': {'k:{"name":"base"}': {'.': {},
+                                                                                                  'f:command': {},
+                                                                                                  'f:image': {},
+                                                                                                  'f:imagePullPolicy': {},
+                                                                                                  'f:name': {},
+                                                                                                  'f:resources': {'.': {},
+                                                                                                                  'f:requests': {'.': {},
+                                                                                                                                 'f:cpu': {},
+                                                                                                                                 'f:memory': {}}},
+                                                                                                  'f:terminationMessagePath': {},
+                                                                                                  'f:terminationMessagePolicy': {}}},
+                                                           'f:dnsPolicy': {},
+                                                           'f:enableServiceLinks': {},
+                                                           'f:restartPolicy': {},
+                                                           'f:schedulerName': {},
+                                                           'f:securityContext': {},
+                                                           'f:terminationGracePeriodSeconds': {}}},
+                                  'manager': 'OpenAPI-Generator',
+                                  'operation': 'Update',
+                                  'subresource': None,
+                                  'time': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal())},
+                                 {'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:status': {'f:conditions': {'.': {},
+                                                                              'k:{"type":"PodScheduled"}': {'.': {},
+                                                                                                            'f:lastProbeTime': {},
+                                                                                                            'f:lastTransitionTime': {},
+                                                                                                            'f:message': {},
+                                                                                                            'f:reason': {},
+                                                                                                            'f:status': {},
+                                                                                                            'f:type': {}}}}},
+                                  'manager': 'kube-scheduler',
+                                  'operation': 'Update',
+                                  'subresource': 'status',
+                                  'time': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal())}],
+              'name': 'test-fail-task-5k2ht89g',
+              'namespace': 'default',
+              'owner_references': None,
+              'resource_version': '11956',
+              'self_link': None,
+              'uid': '2eee2269-3d87-4594-9a0b-54abf8308b09'},
+ 'spec': {'active_deadline_seconds': None,
+          'affinity': {'node_affinity': None,
+                       'pod_affinity': None,
+                       'pod_anti_affinity': None},
+          'automount_service_account_token': None,
+          'containers': [{'args': None,
+                          'command': ['python',
+                                      '-c',
+                                      'raise Exception("This is a runtime '
+                                      'failure")'],
+                          'env': None,
+                          'env_from': None,
+                          'image': 'python:3.8-slim-buster',
+                          'image_pull_policy': 'Always',
+                          'lifecycle': None,
+                          'liveness_probe': None,
+                          'name': 'base',
+                          'ports': None,
+                          'readiness_probe': None,
+                          'resources': {'limits': None,
+                                        'requests': {'cpu': '100m',
+                                                     'memory': '100Gi'}},
+                          'security_context': None,
+                          'startup_probe': None,
+                          'stdin': None,
+                          'stdin_once': None,
+                          'termination_message_path': '/dev/termination-log',
+                          'termination_message_policy': 'File',
+                          'tty': None,
+                          'volume_devices': None,
+                          'volume_mounts': [{'mount_path': '/var/run/secrets/kubernetes.io/serviceaccount',
+                                             'mount_propagation': None,
+                                             'name': 'kube-api-access-bhkjp',
+                                             'read_only': True,
+                                             'sub_path': None,
+                                             'sub_path_expr': None}],
+                          'working_dir': None}],
+          'dns_config': None,
+          'dns_policy': 'ClusterFirst',
+          'enable_service_links': True,
+          'ephemeral_containers': None,
+          'host_aliases': None,
+          'host_ipc': None,
+          'host_network': None,
+          'host_pid': None,
+          'hostname': None,
+          'image_pull_secrets': None,
+          'init_containers': None,
+          'node_name': None,
+          'node_selector': None,
+          'os': None,
+          'overhead': None,
+          'preemption_policy': 'PreemptLowerPriority',
+          'priority': 0,
+          'priority_class_name': None,
+          'readiness_gates': None,
+          'restart_policy': 'Never',
+          'runtime_class_name': None,
+          'scheduler_name': 'default-scheduler',
+          'security_context': {'fs_group': None,
+                               'fs_group_change_policy': None,
+                               'run_as_group': None,
+                               'run_as_non_root': None,
+                               'run_as_user': None,
+                               'se_linux_options': None,
+                               'seccomp_profile': None,
+                               'supplemental_groups': None,
+                               'sysctls': None,
+                               'windows_options': None},
+          'service_account': 'default',
+          'service_account_name': 'default',
+          'set_hostname_as_fqdn': None,
+          'share_process_namespace': None,
+          'subdomain': None,
+          'termination_grace_period_seconds': 30,
+          'tolerations': [{'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/not-ready',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None},
+                          {'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/unreachable',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None}],
+          'topology_spread_constraints': None,
+          'volumes': [{'aws_elastic_block_store': None,
+                       'azure_disk': None,
+                       'azure_file': None,
+                       'cephfs': None,
+                       'cinder': None,
+                       'config_map': None,
+                       'csi': None,
+                       'downward_api': None,
+                       'empty_dir': None,
+                       'ephemeral': None,
+                       'fc': None,
+                       'flex_volume': None,
+                       'flocker': None,
+                       'gce_persistent_disk': None,
+                       'git_repo': None,
+                       'glusterfs': None,
+                       'host_path': None,
+                       'iscsi': None,
+                       'name': 'kube-api-access-bhkjp',
+                       'nfs': None,
+                       'persistent_volume_claim': None,
+                       'photon_persistent_disk': None,
+                       'portworx_volume': None,
+                       'projected': {'default_mode': 420,
+                                     'sources': [{'config_map': None,
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': {'audience': None,
+                                                                            'expiration_seconds': 3607,
+                                                                            'path': 'token'}},
+                                                 {'config_map': {'items': [{'key': 'ca.crt',
+                                                                            'mode': None,
+                                                                            'path': 'ca.crt'}],
+                                                                 'name': 'kube-root-ca.crt',
+                                                                 'optional': None},
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': None},
+                                                 {'config_map': None,
+                                                  'downward_api': {'items': [{'field_ref': {'api_version': 'v1',
+                                                                                            'field_path': 'metadata.namespace'},
+                                                                              'mode': None,
+                                                                              'path': 'namespace',
+                                                                              'resource_field_ref': None}]},
+                                                  'secret': None,
+                                                  'service_account_token': None}]},
+                       'quobyte': None,
+                       'rbd': None,
+                       'scale_io': None,
+                       'secret': None,
+                       'storageos': None,
+                       'vsphere_volume': None}]},
+ 'status': {'conditions': [{'last_probe_time': None,
+                            'last_transition_time': datetime.datetime(2024, 2, 15, 6, 13, 46, tzinfo=tzlocal()),
+                            'message': '0/2 nodes are available: 1 '
+                                       'Insufficient memory, 1 node(s) had '
+                                       'untolerated taint '
+                                       '{node-role.kubernetes.io/control-plane: '
+                                       '}. preemption: 0/2 nodes are '
+                                       'available: 1 No preemption victims '
+                                       'found for incoming pod, 1 Preemption '
+                                       'is not helpful for scheduling.',
+                            'reason': 'Unschedulable',
+                            'status': 'False',
+                            'type': 'PodScheduled'}],
+            'container_statuses': None,
+            'ephemeral_container_statuses': None,
+            'host_ip': None,
+            'init_container_statuses': None,
+            'message': None,
+            'nominated_node_name': None,
+            'phase': 'Pending',
+            'pod_i_ps': None,
+            'pod_ip': None,
+            'qos_class': 'Burstable',
+            'reason': None,
+            'start_time': None}}; 43)
+[2024-02-15T06:15:54.266+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-15T06:15:54.355+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
