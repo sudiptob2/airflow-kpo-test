@@ -5349,3 +5349,877 @@ File Path                                              PID    Runtime      # DAG
 /opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-15T23:31:03
 /opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-15T23:31:03
 ================================================================================
+[2024-02-15T23:31:59.237+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.36s           2024-02-15T23:31:34
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.28s           2024-02-15T23:31:35
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.30s           2024-02-15T23:31:34
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-15T23:31:34
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-15T23:31:34
+================================================================================
+[2024-02-15T23:32:29.910+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.36s           2024-02-15T23:32:04
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.46s           2024-02-15T23:32:06
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.31s           2024-02-15T23:32:05
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-15T23:32:05
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.41s           2024-02-15T23:32:04
+================================================================================
+[2024-02-15T23:33:00.447+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.36s           2024-02-15T23:32:35
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-15T23:32:36
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.27s           2024-02-15T23:32:35
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-15T23:32:35
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.40s           2024-02-15T23:32:35
+================================================================================
+[2024-02-15T23:33:30.975+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-15T23:33:05
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.28s           2024-02-15T23:33:07
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-15T23:33:06
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.22s           2024-02-15T23:33:06
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.38s           2024-02-15T23:33:05
+================================================================================
+[2024-02-15T23:34:01.489+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-15T23:33:36
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-15T23:33:37
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-15T23:33:36
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.22s           2024-02-15T23:33:36
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.38s           2024-02-15T23:33:36
+================================================================================
+[2024-02-15T23:34:31.951+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-15T23:34:06
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-15T23:34:08
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-15T23:34:07
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-15T23:34:07
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.38s           2024-02-15T23:34:07
+================================================================================
+[2024-02-15T23:34:48.138+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-15T23:34:48.155+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-15T23:35:02.527+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-15T23:34:37
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-15T23:34:38
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-15T23:34:37
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.22s           2024-02-15T23:34:37
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-15T23:34:37
+================================================================================
+[2024-02-15T23:35:32.912+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.40s           2024-02-15T23:35:08
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-15T23:35:09
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.26s           2024-02-15T23:35:08
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-15T23:35:08
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.41s           2024-02-15T23:35:08
+================================================================================
+[2024-02-15T23:36:03.173+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.48s           2024-02-15T23:35:39
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.49s           2024-02-15T23:35:40
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.53s           2024-02-15T23:35:40
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.59s           2024-02-15T23:35:40
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.52s           2024-02-15T23:35:39
+================================================================================
+[2024-02-15T23:36:33.802+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.37s           2024-02-15T23:36:10
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.22s           2024-02-15T23:36:11
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-15T23:36:10
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-15T23:36:11
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.41s           2024-02-15T23:36:10
+================================================================================
+[2024-02-15T23:37:04.158+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.38s           2024-02-15T23:36:41
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-15T23:36:41
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.25s           2024-02-15T23:36:41
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-15T23:36:41
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.41s           2024-02-15T23:36:41
+================================================================================
+[2024-02-15T23:37:34.481+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.31s           2024-02-15T23:37:12
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-15T23:37:13
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.30s           2024-02-15T23:37:12
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-15T23:37:12
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-15T23:37:12
+================================================================================
+[2024-02-15T23:38:04.701+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-15T23:37:43
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.26s           2024-02-15T23:37:44
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-15T23:37:44
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.27s           2024-02-15T23:37:44
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-15T23:37:44
+================================================================================
+[2024-02-15T23:38:35.496+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.37s           2024-02-15T23:38:14
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.21s           2024-02-15T23:38:14
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-15T23:38:14
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.22s           2024-02-15T23:38:15
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.45s           2024-02-15T23:38:14
+================================================================================
+[2024-02-15T23:58:05.186+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-15T23:58:05.217+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-15T23:58:11.046+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  1.10s           2024-02-15T23:58:06
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.34s           2024-02-15T23:58:07
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.48s           2024-02-15T23:58:06
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.46s           2024-02-15T23:58:06
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  1.16s           2024-02-15T23:58:06
+================================================================================
+[2024-02-15T23:58:42.081+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.39s           2024-02-15T23:58:36
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.65s           2024-02-15T23:58:39
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.73s           2024-02-15T23:58:38
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.75s           2024-02-15T23:58:38
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.42s           2024-02-15T23:58:36
+================================================================================
+[2024-02-15T23:59:12.677+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.35s           2024-02-15T23:59:07
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-15T23:59:09
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.26s           2024-02-15T23:59:08
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-15T23:59:08
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.39s           2024-02-15T23:59:07
+================================================================================
+[2024-02-15T23:59:42.721+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-15T23:59:38
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-15T23:59:40
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.27s           2024-02-15T23:59:39
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-15T23:59:39
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.33s           2024-02-15T23:59:38
+================================================================================
+[2024-02-16T00:00:13.200+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.35s           2024-02-16T00:00:09
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:00:11
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:00:09
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.22s           2024-02-16T00:00:10
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.42s           2024-02-16T00:00:09
+================================================================================
+[2024-02-16T00:00:43.851+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:00:40
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.22s           2024-02-16T00:00:41
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.21s           2024-02-16T00:00:40
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:00:40
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:00:40
+================================================================================
+[2024-02-16T00:01:14.070+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.30s           2024-02-16T00:01:10
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:01:12
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:01:11
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-16T00:01:11
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-16T00:01:10
+================================================================================
+[2024-02-16T00:01:44.451+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:01:41
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:01:42
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:01:42
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:01:42
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:01:41
+================================================================================
+[2024-02-16T00:02:14.833+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:02:12
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.21s           2024-02-16T00:02:12
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:02:12
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.21s           2024-02-16T00:02:12
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-16T00:02:12
+================================================================================
+[2024-02-16T00:02:45.361+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.30s           2024-02-16T00:02:42
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:02:43
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:02:43
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-16T00:02:43
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.38s           2024-02-16T00:02:42
+================================================================================
+[2024-02-16T00:03:05.825+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-16T00:03:05.840+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-16T00:03:15.823+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.34s           2024-02-16T00:03:13
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:03:13
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.25s           2024-02-16T00:03:13
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:03:13
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.39s           2024-02-16T00:03:13
+================================================================================
+[2024-02-16T00:03:46.157+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:03:43
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:03:44
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:03:44
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-16T00:03:44
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-16T00:03:43
+================================================================================
+[2024-02-16T00:04:16.704+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:04:14
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.22s           2024-02-16T00:04:14
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:04:14
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:04:14
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-16T00:04:14
+================================================================================
+[2024-02-16T00:04:46.930+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.35s           2024-02-16T00:04:45
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.21s           2024-02-16T00:04:46
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.25s           2024-02-16T00:04:45
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:04:45
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-16T00:04:45
+================================================================================
+[2024-02-16T00:05:17.175+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:05:16
+/opt/airflow/dags/test_success_dag.py                   1755  0.00s             1           0  0.21s           2024-02-16T00:04:46
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.25s           2024-02-16T00:05:17
+/opt/airflow/dags/test_fail_dag_2.py                    1752  0.01s             1           0  0.23s           2024-02-16T00:04:45
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:05:16
+================================================================================
+[2024-02-16T00:05:47.285+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:05:47
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:05:17
+/opt/airflow/dags/test_fail_dag.py                      1784  0.00s             1           0  0.25s           2024-02-16T00:05:17
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:05:17
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-16T00:05:47
+================================================================================
+[2024-02-16T00:06:18.206+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py              1810  0.01s             1           0  0.32s           2024-02-16T00:05:47
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:05:47
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:05:47
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:05:47
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py   1808  0.04s             1           0  0.37s           2024-02-16T00:05:47
+================================================================================
+[2024-02-16T00:06:48.404+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.30s           2024-02-16T00:06:18
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:06:18
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:06:18
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:06:18
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:06:18
+================================================================================
+[2024-02-16T00:07:18.553+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:06:49
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.22s           2024-02-16T00:06:50
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.25s           2024-02-16T00:06:50
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:06:50
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.33s           2024-02-16T00:06:49
+================================================================================
+[2024-02-16T00:07:48.767+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:07:20
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.22s           2024-02-16T00:07:21
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:07:21
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:07:21
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-16T00:07:20
+================================================================================
+[2024-02-16T00:08:05.846+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-16T00:08:05.884+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-16T00:08:19.179+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.30s           2024-02-16T00:07:52
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:07:52
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:07:52
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-16T00:07:52
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.33s           2024-02-16T00:07:52
+================================================================================
+[2024-02-16T00:08:49.362+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.29s           2024-02-16T00:08:22
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:08:23
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:08:22
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:08:23
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.34s           2024-02-16T00:08:22
+================================================================================
+[2024-02-16T00:09:19.834+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-16T00:08:53
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:08:53
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:08:53
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-16T00:08:53
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.39s           2024-02-16T00:08:53
+================================================================================
+[2024-02-16T00:09:50.191+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.35s           2024-02-16T00:09:24
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.29s           2024-02-16T00:09:24
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:09:24
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.31s           2024-02-16T00:09:24
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.40s           2024-02-16T00:09:24
+================================================================================
+[2024-02-16T00:10:20.474+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-16T00:09:54
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.26s           2024-02-16T00:09:55
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:09:54
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.28s           2024-02-16T00:09:55
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.29s           2024-02-16T00:09:54
+================================================================================
+[2024-02-16T00:10:50.785+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-16T00:10:25
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:10:25
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:10:25
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:10:25
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-16T00:10:25
+================================================================================
+[2024-02-16T00:11:21.143+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.31s           2024-02-16T00:10:55
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:10:55
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.25s           2024-02-16T00:10:55
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:10:56
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-16T00:10:55
+================================================================================
+[2024-02-16T00:11:51.756+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.30s           2024-02-16T00:11:25
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:11:26
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:11:26
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:11:26
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.36s           2024-02-16T00:11:25
+================================================================================
+[2024-02-16T00:12:22.672+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.36s           2024-02-16T00:11:56
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.32s           2024-02-16T00:11:57
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.29s           2024-02-16T00:11:56
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.32s           2024-02-16T00:11:56
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.28s           2024-02-16T00:11:56
+================================================================================
+[2024-02-16T00:12:52.985+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-16T00:12:27
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:12:27
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.27s           2024-02-16T00:12:27
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.25s           2024-02-16T00:12:27
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-16T00:12:27
+================================================================================
+[2024-02-16T00:13:06.081+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-16T00:13:06.095+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-16T00:13:23.112+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:12:58
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:12:58
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.26s           2024-02-16T00:12:58
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:12:58
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:12:58
+================================================================================
+[2024-02-16T00:13:53.897+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:13:29
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-16T00:13:29
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:13:29
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-16T00:13:29
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.38s           2024-02-16T00:13:29
+================================================================================
+[2024-02-16T00:14:24.114+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.32s           2024-02-16T00:13:59
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:13:59
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:13:59
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:13:59
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.33s           2024-02-16T00:13:59
+================================================================================
+[2024-02-16T00:14:54.374+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.30s           2024-02-16T00:14:30
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.22s           2024-02-16T00:14:31
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:14:30
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:14:31
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:14:30
+================================================================================
+[2024-02-16T00:33:50.202+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-02-16T00:33:50.205+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-02-16T00:33:50.207+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-02-16T00:33:50.208+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-16T00:33:50.221+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-16T00:33:55.167+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/minimal_test_fail_dag.py                49  0.08s             0           0
+/opt/airflow/dags/test_success_dag.py                                           0           0
+/opt/airflow/dags/test_fail_dag.py                                              0           0
+/opt/airflow/dags/test_fail_dag_2.py                                            0           0
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py     46  0.10s             0           0
+================================================================================
+[2024-02-16T00:34:25.935+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  1.16s           2024-02-16T00:33:56
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.67s           2024-02-16T00:33:57
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.67s           2024-02-16T00:33:56
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.69s           2024-02-16T00:33:56
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  1.18s           2024-02-16T00:33:56
+================================================================================
+[2024-02-16T00:34:56.462+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.35s           2024-02-16T00:34:27
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:34:28
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:34:27
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-16T00:34:27
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.39s           2024-02-16T00:34:27
+================================================================================
+[2024-02-16T00:35:26.682+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.34s           2024-02-16T00:34:57
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:34:58
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.28s           2024-02-16T00:34:58
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:34:58
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.39s           2024-02-16T00:34:57
+================================================================================
+[2024-02-16T00:35:57.212+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.42s           2024-02-16T00:35:29
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.85s           2024-02-16T00:35:31
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.68s           2024-02-16T00:35:29
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.97s           2024-02-16T00:35:30
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.45s           2024-02-16T00:35:29
+================================================================================
+[2024-02-16T00:36:27.721+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.65s           2024-02-16T00:35:59
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.29s           2024-02-16T00:36:01
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.28s           2024-02-16T00:36:00
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.27s           2024-02-16T00:36:01
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.67s           2024-02-16T00:35:59
+================================================================================
+[2024-02-16T00:36:58.252+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.53s           2024-02-16T00:36:31
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.33s           2024-02-16T00:36:32
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.34s           2024-02-16T00:36:31
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.35s           2024-02-16T00:36:32
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.52s           2024-02-16T00:36:31
+================================================================================
+[2024-02-16T00:37:28.833+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.47s           2024-02-16T00:37:01
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.38s           2024-02-16T00:37:02
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.29s           2024-02-16T00:37:02
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.38s           2024-02-16T00:37:02
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.49s           2024-02-16T00:37:01
+================================================================================
+[2024-02-16T00:37:58.925+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.79s           2024-02-16T00:37:32
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.33s           2024-02-16T00:37:33
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.43s           2024-02-16T00:37:33
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.42s           2024-02-16T00:37:33
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.84s           2024-02-16T00:37:32
+================================================================================
+[2024-02-16T00:38:29.633+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.48s           2024-02-16T00:38:03
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.32s           2024-02-16T00:38:04
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.22s           2024-02-16T00:38:03
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.23s           2024-02-16T00:38:04
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.55s           2024-02-16T00:38:03
+================================================================================
+[2024-02-16T00:38:50.848+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-16T00:38:50.868+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-16T00:39:00.098+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.39s           2024-02-16T00:38:34
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.29s           2024-02-16T00:38:34
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.33s           2024-02-16T00:38:34
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.30s           2024-02-16T00:38:34
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.43s           2024-02-16T00:38:34
+================================================================================
+[2024-02-16T00:39:30.338+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.38s           2024-02-16T00:39:04
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.27s           2024-02-16T00:39:05
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:39:04
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.29s           2024-02-16T00:39:05
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.29s           2024-02-16T00:39:04
+================================================================================
+[2024-02-16T00:40:00.588+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.31s           2024-02-16T00:39:35
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.24s           2024-02-16T00:39:36
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:39:36
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:39:36
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.34s           2024-02-16T00:39:35
+================================================================================
+[2024-02-16T00:40:31.191+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.39s           2024-02-16T00:40:07
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.31s           2024-02-16T00:40:07
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.27s           2024-02-16T00:40:07
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.29s           2024-02-16T00:40:07
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.48s           2024-02-16T00:40:07
+================================================================================
+[2024-02-16T00:43:52.922+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-02-16T00:43:52.925+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-02-16T00:43:52.927+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-02-16T00:43:52.928+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-02-16T00:43:52.937+0000] {manager.py:741} INFO - There are 5 files in /opt/airflow/dags
+[2024-02-16T00:43:58.185+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/minimal_test_fail_dag.py                51  0.05s             0           0
+/opt/airflow/dags/test_success_dag.py                                           0           0
+/opt/airflow/dags/test_fail_dag.py                                              0           0
+/opt/airflow/dags/test_fail_dag_2.py                                            0           0
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py     47  0.07s             0           0
+================================================================================
+[2024-02-16T00:44:28.414+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  1.12s           2024-02-16T00:43:59
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.75s           2024-02-16T00:44:00
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.76s           2024-02-16T00:43:59
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.76s           2024-02-16T00:44:00
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  1.12s           2024-02-16T00:43:59
+================================================================================
+[2024-02-16T00:44:59.399+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.39s           2024-02-16T00:44:29
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.45s           2024-02-16T00:44:32
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.23s           2024-02-16T00:44:30
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.37s           2024-02-16T00:44:31
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.41s           2024-02-16T00:44:29
+================================================================================
+[2024-02-16T00:45:30.121+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.52s           2024-02-16T00:45:00
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.35s           2024-02-16T00:45:02
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.28s           2024-02-16T00:45:01
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.44s           2024-02-16T00:45:02
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.54s           2024-02-16T00:45:00
+================================================================================
+[2024-02-16T00:46:00.738+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.47s           2024-02-16T00:45:31
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.28s           2024-02-16T00:45:33
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.27s           2024-02-16T00:45:31
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.31s           2024-02-16T00:45:33
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.49s           2024-02-16T00:45:31
+================================================================================
+[2024-02-16T00:46:30.973+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.35s           2024-02-16T00:46:02
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.25s           2024-02-16T00:46:03
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:46:02
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.26s           2024-02-16T00:46:03
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.37s           2024-02-16T00:46:02
+================================================================================
+[2024-02-16T00:47:01.148+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-16T00:46:33
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.23s           2024-02-16T00:46:33
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:46:33
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.24s           2024-02-16T00:46:33
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.40s           2024-02-16T00:46:33
+================================================================================
+[2024-02-16T00:47:31.541+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.33s           2024-02-16T00:47:04
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.29s           2024-02-16T00:47:05
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.24s           2024-02-16T00:47:04
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.29s           2024-02-16T00:47:05
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.41s           2024-02-16T00:47:04
+================================================================================
+[2024-02-16T00:48:02.019+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/minimal_test_fail_dag.py                                      1           0  0.40s           2024-02-16T00:47:35
+/opt/airflow/dags/test_success_dag.py                                           1           0  0.26s           2024-02-16T00:47:35
+/opt/airflow/dags/test_fail_dag.py                                              1           0  0.34s           2024-02-16T00:47:35
+/opt/airflow/dags/test_fail_dag_2.py                                            1           0  0.27s           2024-02-16T00:47:35
+/opt/airflow/dags/minimal_test_fail_dag_without_cr.py                           1           0  0.35s           2024-02-16T00:47:35
+================================================================================

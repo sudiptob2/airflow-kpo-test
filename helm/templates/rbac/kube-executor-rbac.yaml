@@ -6,8 +6,11 @@ metadata:
   namespace: {{ .Release.Namespace }}
 rules:
   - apiGroups: ["", "extensions", "apps"]
-    resources: ["pods", "pods/log", "pods/exec"]
+    resources: ["pods", "pods/log", "pods/exec", "events"]  # add "events" here
     verbs: ["watch", "create", "delete", "get", "list", "patch"]
+  - apiGroups: [""]
+    resources: ["events"]  # add this block
+    verbs: ["*"]
 
 ---
 kind: RoleBinding

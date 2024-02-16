@@ -757,3 +757,624 @@ remote_pod: {'api_version': None,
             'start_time': None}}; 39)
 [2024-02-15T23:30:09.498+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
 [2024-02-15T23:30:09.556+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-16T00:36:28.790+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minimal_test_fail_dag.minimal_test_fail_task scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2024-02-16T00:36:28.823+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minimal_test_fail_dag.minimal_test_fail_task scheduled__2022-01-01T00:00:00+00:00 [queued]>
+[2024-02-16T00:36:28.825+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-16T00:36:28.874+0000] {taskinstance.py:2191} INFO - Executing <Task(KubernetesPodOperator): minimal_test_fail_task> on 2022-01-01 00:00:00+00:00
+[2024-02-16T00:36:28.916+0000] {standard_task_runner.py:60} INFO - Started process 39 to run task
+[2024-02-16T00:36:28.931+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'minimal_test_fail_dag', 'minimal_test_fail_task', 'scheduled__2022-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/minimal_test_fail_dag.py', '--cfg-path', '/tmp/tmpe53hyzu8']
+[2024-02-16T00:36:28.936+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask minimal_test_fail_task
+[2024-02-16T00:36:29.065+0000] {task_command.py:423} INFO - Running <TaskInstance: minimal_test_fail_dag.minimal_test_fail_task scheduled__2022-01-01T00:00:00+00:00 [running]> on host minimal-test-fail-dag-minimal-test-fail-task-nhijzveg
+[2024-02-16T00:36:29.425+0000] {pod_generator.py:547} WARNING - Model file  does not exist
+[2024-02-16T00:36:29.557+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='minimal_test_fail_dag' AIRFLOW_CTX_TASK_ID='minimal_test_fail_task' AIRFLOW_CTX_EXECUTION_DATE='2022-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-01-01T00:00:00+00:00'
+[2024-02-16T00:36:29.599+0000] {base.py:83} INFO - Using connection ID 'kubernetes_default' for task execution.
+[2024-02-16T00:36:29.606+0000] {pod.py:926} INFO - Building pod minimal-test-fail-task-3lfybmd8 with labels: {'dag_id': 'minimal_test_fail_dag', 'task_id': 'minimal_test_fail_task', 'run_id': 'scheduled__2022-01-01T0000000000-3ef18781b', 'kubernetes_pod_operator': 'True', 'try_number': '1'}
+[2024-02-16T00:36:30.040+0000] {pod.py:490} INFO - Found matching pod minimal-test-fail-task-3lfybmd8 with labels {'airflow_kpo_in_cluster': 'True', 'airflow_version': '2.8.1', 'dag_id': 'minimal_test_fail_dag', 'kubernetes_pod_operator': 'True', 'run_id': 'scheduled__2022-01-01T0000000000-3ef18781b', 'task_id': 'minimal_test_fail_task', 'try_number': '1'}
+[2024-02-16T00:36:30.093+0000] {pod.py:491} INFO - `try_number` of task_instance: 1
+[2024-02-16T00:36:30.105+0000] {pod.py:492} INFO - `try_number` of pod: 1
+[2024-02-16T00:36:30.142+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:31.264+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:32.336+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:33.387+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:34.443+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:35.494+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:36.530+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:37.604+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:38.651+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:39.694+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:40.730+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:41.776+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:42.842+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:43.897+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:44.951+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:45.996+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:47.029+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:48.069+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:49.107+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:50.162+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:51.213+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:52.246+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:53.277+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:54.344+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:55.415+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:56.461+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:57.506+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:58.560+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:36:59.589+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:00.638+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:01.707+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:02.746+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:03.824+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:04.871+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:05.930+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:06.982+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:08.033+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:09.086+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:10.121+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:11.149+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:12.210+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:13.280+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:14.351+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:15.397+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:16.439+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:17.466+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:18.683+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:19.753+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:20.801+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:21.829+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:22.873+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:23.918+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:24.996+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:26.048+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:27.080+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:28.123+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:29.153+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:30.182+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:31.238+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:32.382+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:33.466+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:34.498+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:35.579+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:36.657+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:37.734+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:38.780+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:39.831+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:40.878+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:41.947+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:42.984+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:44.054+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:45.093+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:46.134+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:47.164+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:48.227+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:49.278+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:50.351+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:51.388+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:52.455+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:53.506+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:54.566+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:55.673+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:56.712+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:57.840+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:58.885+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:37:59.924+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:00.956+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:02.064+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:03.146+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:04.208+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:05.267+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:06.316+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:07.354+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:08.438+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:09.472+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:10.501+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:11.558+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:12.611+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:13.653+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:14.685+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:15.738+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:16.797+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:17.824+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:18.882+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:19.919+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:20.976+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:22.017+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:23.059+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:24.127+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:25.155+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:26.198+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:27.260+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:28.308+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:29.335+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:30.376+0000] {pod_manager.py:359} WARNING - Pod not yet started: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:30.464+0000] {pod.py:516} ERROR - Pod Event: FailedScheduling - 0/2 nodes are available: 1 Insufficient cpu, 1 Insufficient memory, 1 node(s) had untolerated taint {node-role.kubernetes.io/control-plane: }. preemption: 0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption is not helpful for scheduling.
+[2024-02-16T00:38:30.619+0000] {pod.py:732} ERROR - Pod Event: FailedScheduling - 0/2 nodes are available: 1 Insufficient cpu, 1 Insufficient memory, 1 node(s) had untolerated taint {node-role.kubernetes.io/control-plane: }. preemption: 0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption is not helpful for scheduling.
+[2024-02-16T00:38:30.624+0000] {pod.py:785} INFO - Deleting pod: minimal-test-fail-task-3lfybmd8
+[2024-02-16T00:38:30.795+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 551, in execute_sync
+    self.await_pod_start(pod=self.pod)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 508, in await_pod_start
+    self.pod_manager.await_pod_start(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/utils/pod_manager.py", line 365, in await_pod_start
+    raise PodLaunchFailedException(msg)
+airflow.providers.cncf.kubernetes.utils.pod_manager.PodLaunchFailedException: Pod took longer than 120 seconds to start. Check the pod events in kubernetes to determine why.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 534, in execute
+    return self.execute_sync(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 574, in execute_sync
+    self.cleanup(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/cncf/kubernetes/operators/pod.py", line 715, in cleanup
+    raise AirflowException(
+airflow.exceptions.AirflowException: Pod minimal-test-fail-task-3lfybmd8 returned a failure.
+remote_pod: {'api_version': None,
+ 'kind': None,
+ 'metadata': {'annotations': None,
+              'cluster_name': None,
+              'creation_timestamp': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal()),
+              'deletion_grace_period_seconds': None,
+              'deletion_timestamp': None,
+              'finalizers': None,
+              'generate_name': None,
+              'generation': None,
+              'labels': {'airflow_kpo_in_cluster': 'True',
+                         'airflow_version': '2.8.1',
+                         'dag_id': 'minimal_test_fail_dag',
+                         'kubernetes_pod_operator': 'True',
+                         'run_id': 'scheduled__2022-01-01T0000000000-3ef18781b',
+                         'task_id': 'minimal_test_fail_task',
+                         'try_number': '1'},
+              'managed_fields': [{'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:metadata': {'f:labels': {'.': {},
+                                                                            'f:airflow_kpo_in_cluster': {},
+                                                                            'f:airflow_version': {},
+                                                                            'f:dag_id': {},
+                                                                            'f:kubernetes_pod_operator': {},
+                                                                            'f:run_id': {},
+                                                                            'f:task_id': {},
+                                                                            'f:try_number': {}}},
+                                                'f:spec': {'f:affinity': {},
+                                                           'f:containers': {'k:{"name":"base"}': {'.': {},
+                                                                                                  'f:args': {},
+                                                                                                  'f:command': {},
+                                                                                                  'f:image': {},
+                                                                                                  'f:imagePullPolicy': {},
+                                                                                                  'f:name': {},
+                                                                                                  'f:resources': {'.': {},
+                                                                                                                  'f:requests': {'.': {},
+                                                                                                                                 'f:cpu': {},
+                                                                                                                                 'f:memory': {}}},
+                                                                                                  'f:terminationMessagePath': {},
+                                                                                                  'f:terminationMessagePolicy': {}}},
+                                                           'f:dnsPolicy': {},
+                                                           'f:enableServiceLinks': {},
+                                                           'f:restartPolicy': {},
+                                                           'f:schedulerName': {},
+                                                           'f:securityContext': {},
+                                                           'f:terminationGracePeriodSeconds': {}}},
+                                  'manager': 'OpenAPI-Generator',
+                                  'operation': 'Update',
+                                  'subresource': None,
+                                  'time': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal())},
+                                 {'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:status': {'f:conditions': {'.': {},
+                                                                              'k:{"type":"PodScheduled"}': {'.': {},
+                                                                                                            'f:lastProbeTime': {},
+                                                                                                            'f:lastTransitionTime': {},
+                                                                                                            'f:message': {},
+                                                                                                            'f:reason': {},
+                                                                                                            'f:status': {},
+                                                                                                            'f:type': {}}}}},
+                                  'manager': 'kube-scheduler',
+                                  'operation': 'Update',
+                                  'subresource': 'status',
+                                  'time': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal())}],
+              'name': 'minimal-test-fail-task-3lfybmd8',
+              'namespace': 'default',
+              'owner_references': None,
+              'resource_version': '48562',
+              'self_link': None,
+              'uid': 'cb223c7a-6d65-4a16-9904-d9f662b3c643'},
+ 'spec': {'active_deadline_seconds': None,
+          'affinity': {'node_affinity': None,
+                       'pod_affinity': None,
+                       'pod_anti_affinity': None},
+          'automount_service_account_token': None,
+          'containers': [{'args': ['eccho', 'Hello World!'],
+                          'command': ['/bin/sh', '-c', '-x'],
+                          'env': None,
+                          'env_from': None,
+                          'image': 'alpine:latest',
+                          'image_pull_policy': 'Always',
+                          'lifecycle': None,
+                          'liveness_probe': None,
+                          'name': 'base',
+                          'ports': None,
+                          'readiness_probe': None,
+                          'resources': {'limits': None,
+                                        'requests': {'cpu': '1k',
+                                                     'memory': '1000Gi'}},
+                          'security_context': None,
+                          'startup_probe': None,
+                          'stdin': None,
+                          'stdin_once': None,
+                          'termination_message_path': '/dev/termination-log',
+                          'termination_message_policy': 'File',
+                          'tty': None,
+                          'volume_devices': None,
+                          'volume_mounts': [{'mount_path': '/var/run/secrets/kubernetes.io/serviceaccount',
+                                             'mount_propagation': None,
+                                             'name': 'kube-api-access-db5qg',
+                                             'read_only': True,
+                                             'sub_path': None,
+                                             'sub_path_expr': None}],
+                          'working_dir': None}],
+          'dns_config': None,
+          'dns_policy': 'ClusterFirst',
+          'enable_service_links': True,
+          'ephemeral_containers': None,
+          'host_aliases': None,
+          'host_ipc': None,
+          'host_network': None,
+          'host_pid': None,
+          'hostname': None,
+          'image_pull_secrets': None,
+          'init_containers': None,
+          'node_name': None,
+          'node_selector': None,
+          'os': None,
+          'overhead': None,
+          'preemption_policy': 'PreemptLowerPriority',
+          'priority': 0,
+          'priority_class_name': None,
+          'readiness_gates': None,
+          'restart_policy': 'Never',
+          'runtime_class_name': None,
+          'scheduler_name': 'default-scheduler',
+          'security_context': {'fs_group': None,
+                               'fs_group_change_policy': None,
+                               'run_as_group': None,
+                               'run_as_non_root': None,
+                               'run_as_user': None,
+                               'se_linux_options': None,
+                               'seccomp_profile': None,
+                               'supplemental_groups': None,
+                               'sysctls': None,
+                               'windows_options': None},
+          'service_account': 'default',
+          'service_account_name': 'default',
+          'set_hostname_as_fqdn': None,
+          'share_process_namespace': None,
+          'subdomain': None,
+          'termination_grace_period_seconds': 30,
+          'tolerations': [{'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/not-ready',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None},
+                          {'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/unreachable',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None}],
+          'topology_spread_constraints': None,
+          'volumes': [{'aws_elastic_block_store': None,
+                       'azure_disk': None,
+                       'azure_file': None,
+                       'cephfs': None,
+                       'cinder': None,
+                       'config_map': None,
+                       'csi': None,
+                       'downward_api': None,
+                       'empty_dir': None,
+                       'ephemeral': None,
+                       'fc': None,
+                       'flex_volume': None,
+                       'flocker': None,
+                       'gce_persistent_disk': None,
+                       'git_repo': None,
+                       'glusterfs': None,
+                       'host_path': None,
+                       'iscsi': None,
+                       'name': 'kube-api-access-db5qg',
+                       'nfs': None,
+                       'persistent_volume_claim': None,
+                       'photon_persistent_disk': None,
+                       'portworx_volume': None,
+                       'projected': {'default_mode': 420,
+                                     'sources': [{'config_map': None,
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': {'audience': None,
+                                                                            'expiration_seconds': 3607,
+                                                                            'path': 'token'}},
+                                                 {'config_map': {'items': [{'key': 'ca.crt',
+                                                                            'mode': None,
+                                                                            'path': 'ca.crt'}],
+                                                                 'name': 'kube-root-ca.crt',
+                                                                 'optional': None},
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': None},
+                                                 {'config_map': None,
+                                                  'downward_api': {'items': [{'field_ref': {'api_version': 'v1',
+                                                                                            'field_path': 'metadata.namespace'},
+                                                                              'mode': None,
+                                                                              'path': 'namespace',
+                                                                              'resource_field_ref': None}]},
+                                                  'secret': None,
+                                                  'service_account_token': None}]},
+                       'quobyte': None,
+                       'rbd': None,
+                       'scale_io': None,
+                       'secret': None,
+                       'storageos': None,
+                       'vsphere_volume': None}]},
+ 'status': {'conditions': [{'last_probe_time': None,
+                            'last_transition_time': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal()),
+                            'message': '0/2 nodes are available: 1 '
+                                       'Insufficient cpu, 1 Insufficient '
+                                       'memory, 1 node(s) had untolerated '
+                                       'taint '
+                                       '{node-role.kubernetes.io/control-plane: '
+                                       '}. preemption: 0/2 nodes are '
+                                       'available: 1 No preemption victims '
+                                       'found for incoming pod, 1 Preemption '
+                                       'is not helpful for scheduling.',
+                            'reason': 'Unschedulable',
+                            'status': 'False',
+                            'type': 'PodScheduled'}],
+            'container_statuses': None,
+            'ephemeral_container_statuses': None,
+            'host_ip': None,
+            'init_container_statuses': None,
+            'message': None,
+            'nominated_node_name': None,
+            'phase': 'Pending',
+            'pod_i_ps': None,
+            'pod_ip': None,
+            'qos_class': 'Burstable',
+            'reason': None,
+            'start_time': None}}
+[2024-02-16T00:38:30.824+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=minimal_test_fail_dag, task_id=minimal_test_fail_task, execution_date=20220101T000000, start_date=20240216T003628, end_date=20240216T003830
+[2024-02-16T00:38:30.901+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 2 for task minimal_test_fail_task (Pod minimal-test-fail-task-3lfybmd8 returned a failure.
+remote_pod: {'api_version': None,
+ 'kind': None,
+ 'metadata': {'annotations': None,
+              'cluster_name': None,
+              'creation_timestamp': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal()),
+              'deletion_grace_period_seconds': None,
+              'deletion_timestamp': None,
+              'finalizers': None,
+              'generate_name': None,
+              'generation': None,
+              'labels': {'airflow_kpo_in_cluster': 'True',
+                         'airflow_version': '2.8.1',
+                         'dag_id': 'minimal_test_fail_dag',
+                         'kubernetes_pod_operator': 'True',
+                         'run_id': 'scheduled__2022-01-01T0000000000-3ef18781b',
+                         'task_id': 'minimal_test_fail_task',
+                         'try_number': '1'},
+              'managed_fields': [{'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:metadata': {'f:labels': {'.': {},
+                                                                            'f:airflow_kpo_in_cluster': {},
+                                                                            'f:airflow_version': {},
+                                                                            'f:dag_id': {},
+                                                                            'f:kubernetes_pod_operator': {},
+                                                                            'f:run_id': {},
+                                                                            'f:task_id': {},
+                                                                            'f:try_number': {}}},
+                                                'f:spec': {'f:affinity': {},
+                                                           'f:containers': {'k:{"name":"base"}': {'.': {},
+                                                                                                  'f:args': {},
+                                                                                                  'f:command': {},
+                                                                                                  'f:image': {},
+                                                                                                  'f:imagePullPolicy': {},
+                                                                                                  'f:name': {},
+                                                                                                  'f:resources': {'.': {},
+                                                                                                                  'f:requests': {'.': {},
+                                                                                                                                 'f:cpu': {},
+                                                                                                                                 'f:memory': {}}},
+                                                                                                  'f:terminationMessagePath': {},
+                                                                                                  'f:terminationMessagePolicy': {}}},
+                                                           'f:dnsPolicy': {},
+                                                           'f:enableServiceLinks': {},
+                                                           'f:restartPolicy': {},
+                                                           'f:schedulerName': {},
+                                                           'f:securityContext': {},
+                                                           'f:terminationGracePeriodSeconds': {}}},
+                                  'manager': 'OpenAPI-Generator',
+                                  'operation': 'Update',
+                                  'subresource': None,
+                                  'time': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal())},
+                                 {'api_version': 'v1',
+                                  'fields_type': 'FieldsV1',
+                                  'fields_v1': {'f:status': {'f:conditions': {'.': {},
+                                                                              'k:{"type":"PodScheduled"}': {'.': {},
+                                                                                                            'f:lastProbeTime': {},
+                                                                                                            'f:lastTransitionTime': {},
+                                                                                                            'f:message': {},
+                                                                                                            'f:reason': {},
+                                                                                                            'f:status': {},
+                                                                                                            'f:type': {}}}}},
+                                  'manager': 'kube-scheduler',
+                                  'operation': 'Update',
+                                  'subresource': 'status',
+                                  'time': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal())}],
+              'name': 'minimal-test-fail-task-3lfybmd8',
+              'namespace': 'default',
+              'owner_references': None,
+              'resource_version': '48562',
+              'self_link': None,
+              'uid': 'cb223c7a-6d65-4a16-9904-d9f662b3c643'},
+ 'spec': {'active_deadline_seconds': None,
+          'affinity': {'node_affinity': None,
+                       'pod_affinity': None,
+                       'pod_anti_affinity': None},
+          'automount_service_account_token': None,
+          'containers': [{'args': ['eccho', 'Hello World!'],
+                          'command': ['/bin/sh', '-c', '-x'],
+                          'env': None,
+                          'env_from': None,
+                          'image': 'alpine:latest',
+                          'image_pull_policy': 'Always',
+                          'lifecycle': None,
+                          'liveness_probe': None,
+                          'name': 'base',
+                          'ports': None,
+                          'readiness_probe': None,
+                          'resources': {'limits': None,
+                                        'requests': {'cpu': '1k',
+                                                     'memory': '1000Gi'}},
+                          'security_context': None,
+                          'startup_probe': None,
+                          'stdin': None,
+                          'stdin_once': None,
+                          'termination_message_path': '/dev/termination-log',
+                          'termination_message_policy': 'File',
+                          'tty': None,
+                          'volume_devices': None,
+                          'volume_mounts': [{'mount_path': '/var/run/secrets/kubernetes.io/serviceaccount',
+                                             'mount_propagation': None,
+                                             'name': 'kube-api-access-db5qg',
+                                             'read_only': True,
+                                             'sub_path': None,
+                                             'sub_path_expr': None}],
+                          'working_dir': None}],
+          'dns_config': None,
+          'dns_policy': 'ClusterFirst',
+          'enable_service_links': True,
+          'ephemeral_containers': None,
+          'host_aliases': None,
+          'host_ipc': None,
+          'host_network': None,
+          'host_pid': None,
+          'hostname': None,
+          'image_pull_secrets': None,
+          'init_containers': None,
+          'node_name': None,
+          'node_selector': None,
+          'os': None,
+          'overhead': None,
+          'preemption_policy': 'PreemptLowerPriority',
+          'priority': 0,
+          'priority_class_name': None,
+          'readiness_gates': None,
+          'restart_policy': 'Never',
+          'runtime_class_name': None,
+          'scheduler_name': 'default-scheduler',
+          'security_context': {'fs_group': None,
+                               'fs_group_change_policy': None,
+                               'run_as_group': None,
+                               'run_as_non_root': None,
+                               'run_as_user': None,
+                               'se_linux_options': None,
+                               'seccomp_profile': None,
+                               'supplemental_groups': None,
+                               'sysctls': None,
+                               'windows_options': None},
+          'service_account': 'default',
+          'service_account_name': 'default',
+          'set_hostname_as_fqdn': None,
+          'share_process_namespace': None,
+          'subdomain': None,
+          'termination_grace_period_seconds': 30,
+          'tolerations': [{'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/not-ready',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None},
+                          {'effect': 'NoExecute',
+                           'key': 'node.kubernetes.io/unreachable',
+                           'operator': 'Exists',
+                           'toleration_seconds': 300,
+                           'value': None}],
+          'topology_spread_constraints': None,
+          'volumes': [{'aws_elastic_block_store': None,
+                       'azure_disk': None,
+                       'azure_file': None,
+                       'cephfs': None,
+                       'cinder': None,
+                       'config_map': None,
+                       'csi': None,
+                       'downward_api': None,
+                       'empty_dir': None,
+                       'ephemeral': None,
+                       'fc': None,
+                       'flex_volume': None,
+                       'flocker': None,
+                       'gce_persistent_disk': None,
+                       'git_repo': None,
+                       'glusterfs': None,
+                       'host_path': None,
+                       'iscsi': None,
+                       'name': 'kube-api-access-db5qg',
+                       'nfs': None,
+                       'persistent_volume_claim': None,
+                       'photon_persistent_disk': None,
+                       'portworx_volume': None,
+                       'projected': {'default_mode': 420,
+                                     'sources': [{'config_map': None,
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': {'audience': None,
+                                                                            'expiration_seconds': 3607,
+                                                                            'path': 'token'}},
+                                                 {'config_map': {'items': [{'key': 'ca.crt',
+                                                                            'mode': None,
+                                                                            'path': 'ca.crt'}],
+                                                                 'name': 'kube-root-ca.crt',
+                                                                 'optional': None},
+                                                  'downward_api': None,
+                                                  'secret': None,
+                                                  'service_account_token': None},
+                                                 {'config_map': None,
+                                                  'downward_api': {'items': [{'field_ref': {'api_version': 'v1',
+                                                                                            'field_path': 'metadata.namespace'},
+                                                                              'mode': None,
+                                                                              'path': 'namespace',
+                                                                              'resource_field_ref': None}]},
+                                                  'secret': None,
+                                                  'service_account_token': None}]},
+                       'quobyte': None,
+                       'rbd': None,
+                       'scale_io': None,
+                       'secret': None,
+                       'storageos': None,
+                       'vsphere_volume': None}]},
+ 'status': {'conditions': [{'last_probe_time': None,
+                            'last_transition_time': datetime.datetime(2024, 2, 16, 0, 36, 29, tzinfo=tzlocal()),
+                            'message': '0/2 nodes are available: 1 '
+                                       'Insufficient cpu, 1 Insufficient '
+                                       'memory, 1 node(s) had untolerated '
+                                       'taint '
+                                       '{node-role.kubernetes.io/control-plane: '
+                                       '}. preemption: 0/2 nodes are '
+                                       'available: 1 No preemption victims '
+                                       'found for incoming pod, 1 Preemption '
+                                       'is not helpful for scheduling.',
+                            'reason': 'Unschedulable',
+                            'status': 'False',
+                            'type': 'PodScheduled'}],
+            'container_statuses': None,
+            'ephemeral_container_statuses': None,
+            'host_ip': None,
+            'init_container_statuses': None,
+            'message': None,
+            'nominated_node_name': None,
+            'phase': 'Pending',
+            'pod_i_ps': None,
+            'pod_ip': None,
+            'qos_class': 'Burstable',
+            'reason': None,
+            'start_time': None}}; 39)
+[2024-02-16T00:38:30.959+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-16T00:38:31.039+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
